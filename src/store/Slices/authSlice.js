@@ -14,7 +14,7 @@ export const createAccount = createAsyncThunk("register", async (data) => {
     formData.append("username", data.username);
     formData.append("email", data.email);
     formData.append("password", data.password);
-    formData.append("fullName", data.fullName);
+    formData.append("fullname", data.fullname);
     if (data.coverImage) {
         formData.append("coverImage", data.coverImage[0]);
     }

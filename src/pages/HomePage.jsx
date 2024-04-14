@@ -42,7 +42,7 @@ function HomePage() {
                             thumbnail={video.thumbnail?.url}
                             createdAt={video.createdAt}
                             views={video.views}
-                            channelName={video.ownerDetails.username}
+                            channelName={video.ownerDetails?.username}
                             videoId={video._id}
                         />
                     ))}
