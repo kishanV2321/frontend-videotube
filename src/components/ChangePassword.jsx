@@ -18,7 +18,7 @@ function ChangePassword() {
         dispatch(
             changePassword({
                 oldPassword: data?.oldPassword,
-                newPassword: data?.oldPassword,
+                newPassword: data?.newPassword,
             })
         );
         resetField("oldPassword");

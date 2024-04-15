@@ -23,8 +23,8 @@ function Channel() {
                     coverImage={channel?.coverImage.url}
                     avatar={channel?.avatar.url}
                     subscribedCount={channel?.channelsSubscribedToCount}
-                    fullName={channel?.fullName}
-                    subscribersCount={channel?.subcribersCount}
+                    fullName={channel?.fullname}
+                    subscribersCount={channel?.subscribersCount}
                     isSubscribed={channel?.isSubscribed}
                     channelId={channel?._id}
                 />

@@ -15,7 +15,7 @@ function EditPersonalInfo() {
     const auth = useSelector((state) => state.auth?.userData);
 
     useEffect(() => {
-        setValue("fullName", auth?.fullName);
+        setValue("fullname", auth?.fullname);
         setValue("email", auth?.email);
     }, [auth, setValue]);
 
@@ -25,7 +25,7 @@ function EditPersonalInfo() {
 
     const reset = (e) => {
         e.preventDefault();
-        setValue("fullName", auth?.fullName);
+        setValue("fullname", auth?.fullname);
         setValue("email", auth?.email);
     };
 
@@ -48,13 +48,13 @@ function EditPersonalInfo() {
                                 label="Full Name"
                                 type="text"
                                 className="rounded"
-                                {...register("fullName", {
-                                    required: "FullName is required",
+                                {...register("fullname", {
+                                    required: "fullname is required",
                                 })}
                             />
-                            {errors.fullName && (
+                            {errors.fullname && (
                                 <span className="text-sm text-red-500">
-                                    {errors.fullName?.message}
+                                    {errors.fullname?.message}
                                 </span>
                             )}
                         </div>

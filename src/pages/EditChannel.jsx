@@ -23,10 +23,10 @@ function EditChannel() {
             {channel && (
                 <ChannelHeader
                     username={channel?.username}
-                    coverImage={channel?.coverImage.url}
-                    avatar={channel?.avatar.url}
+                    coverImage={channel?.coverImage?.url}
+                    avatar={channel?.avatar?.url}
                     subscribedCount={channel?.channelsSubscribedToCount}
-                    fullName={channel?.fullName}
+                    fullName={channel?.fullname}
                     subscribersCount={channel?.subcribersCount}
                     isSubscribed={channel?.isSubscribed}
                     channelId={channel?._id}
