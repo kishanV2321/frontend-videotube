@@ -106,7 +106,7 @@ function SignUp() {
                             </label> */}
                         </div>
                         {errors.avatar && (
-                            <div className="text-red-500">
+                            <div className="text-customRed">
                                 {errors.avatar.message}
                             </div>
                         )}
@@ -120,7 +120,7 @@ function SignUp() {
                             className="h-8"
                         />
                         {errors.username && (
-                            <span className="text-red-500">
+                            <span className="text-customRed">
                                 {errors.username.message}
                             </span>
                         )}
@@ -134,7 +134,7 @@ function SignUp() {
                             className="h-8"
                         />
                         {errors.email && (
-                            <span className="text-red-500">
+                            <span className="text-customRed">
                                 {errors.email.message}
                             </span>
                         )}
@@ -148,7 +148,7 @@ function SignUp() {
                             className="h-8"
                         />
                         {errors.fullName && (
-                            <span className="text-red-500">
+                            <span className="text-customRed">
                                 {errors.fullName.message}
                             </span>
                         )}
@@ -162,7 +162,7 @@ function SignUp() {
                             className="h-8"
                         />
                         {errors.password && (
-                            <span className="text-red-500">
+                            <span className="text-customRed">
                                 {errors.password.message}
                             </span>
                         )}

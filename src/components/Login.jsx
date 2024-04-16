@@ -55,7 +55,7 @@ function Login() {
                             })}
                         />
                         {errors.username && (
-                            <span className="text-red-500">
+                            <span className="text-customRed">
                                 {errors.username.message}
                             </span>
                         )}
@@ -73,7 +73,7 @@ function Login() {
 
                         <Button
                             type="submit"
-                            bgColor="bg-purple-500"
+                            bgColor="bg-customRed"
                             className="w-full sm:py-3 py-2 hover:bg-red-800 text-lg"
                         >
                             Login
