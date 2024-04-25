@@ -33,7 +33,7 @@ function Description({
         }
     };
 
-    const handleSubsribe = () => {};
+    const handleSubsribe = () => { };
     return (
         <>
             <section className="sm:max-w-4xl w-full text-white sm:p-5 p-2 space-y-2">
@@ -79,7 +79,8 @@ function Description({
                             <div onClick={handleSubsribe}>
                                 <Button
                                     onClick={handleSubscribe}
-                                    className="border-white hover:scale-110 transition-all text-black font-bold px-4 py-1 bg-customRed"
+                                    className={`border-white hover:scale-110 transition-all font-bold px-4 py-1 ${localIsSubscribed ? "bg-blue-700 text-white" : "bg-customRed text-black"
+                                        }`}
                                 >
                                     {localIsSubscribed
                                         ? "Subscribed"
